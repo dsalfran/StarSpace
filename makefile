@@ -113,6 +113,9 @@ print_ngrams: $(OBJS)
 embed_doc: $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) $(INCLUDES) -g src/apps/embed_doc.cpp -o embed_doc
 
+embed_doc2: $(OBJS)
+	$(CXX) $(CXXFLAGS) $(OBJS) $(INCLUDES) -g src/apps/embed_doc2.cpp -o embed_doc2
+
 test: $(TESTS)
 
 clean:
